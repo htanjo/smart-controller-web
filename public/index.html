@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#292929">
+    <title>Smart Controller</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="indicator">
+        <div class="indicator-l"></div>
+        <div class="indicator-r"></div>
+      </div>
+      <div class="buttons">
+        <div class="row">
+          <div class="col">
+            <div class="btn-stacked">
+              <button class="btn" data-command="tvChannelUp"><ion-icon name="ios-arrow-up"></ion-icon></button>
+              <button class="btn" data-command="tvChannelDown"><ion-icon name="ios-arrow-down"></ion-icon></button>
+            </div>
+          </div>
+          <div class="col">
+            <button class="btn" data-command="tvPowerToggle"><ion-icon name="tv"></ion-icon></button>
+          </div>
+          <div class="col">
+            <div class="btn-stacked">
+              <button class="btn" data-command="tvVolumeUp"><ion-icon name="add"></ion-icon></button>
+              <button class="btn" data-command="tvVolumeDown"><ion-icon name="remove"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button class="btn" data-command="acCoolingOn"><ion-icon name="snow"></ion-icon></button>
+          </div>
+          <div class="col">
+            <button class="btn" data-command="acHeatingOn"><ion-icon name="ios-flame"></ion-icon></button>
+          </div>
+          <div class="col">
+            <button class="btn" data-command="acOff">OFF</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="btn-combined">
+                <button class="btn" data-command="livingLightOff,livingPlugOff">OFF</button>
+                <button class="btn" data-command="livingLightOn,livingPlugOn"><ion-icon name="sunny"></ion-icon></button>
+              </div>
+          </div>
+          <div class="col">
+            <div class="btn-combined">
+              <button class="btn" data-command="bedroomLightOff,bedroomPlugOff">OFF</button>
+              <button class="btn" data-command="bedroomLightOn,bedroomPlugOn"><ion-icon name="sunny"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">SMART CONTROLLER</div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
