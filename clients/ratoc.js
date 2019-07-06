@@ -1,9 +1,6 @@
 const net = require('net');
 
-const host = '192.168.11.11';
-const port = 60001;
-
-async function send({ data }) {
+async function send({ host, port, data }) {
   return new Promise((resolve, reject) => {
     const client = new net.Socket();
     client.connect(port, host, () => {
