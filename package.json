@@ -7,7 +7,7 @@
     "build": "webpack"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "tplink-smarthome-api": "^1.2.0"
   },
   "devDependencies": {
